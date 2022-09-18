@@ -11,13 +11,10 @@
 	pkgs.go
 	pkgs.rustup
 	pkgs.neovim
-	pkgs.slack
 	pkgs.lazygit
 	pkgs.btop
 	pkgs.k9s
 	pkgs.docker
-	pkgs.discord
-	pkgs.flatpak
 	pkgs.fzf
 	pkgs.spotifyd
 	pkgs.spotify-tui
