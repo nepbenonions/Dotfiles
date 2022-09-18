@@ -7,21 +7,42 @@
   home.homeDirectory = "/home/ben";
 
   home.packages = [
-  	pkgs.kubectl
-	pkgs.go
-	pkgs.rustup
-	pkgs.neovim
+       #kubernetes
+	pkgs.k9s #a very good boy
+  	pkgs.kubectl #kube cuddle
+	pkgs.krew #package manager for kubectl plugins
+
+	#languages
+	
+	pkgs.go #GO!
+	pkgs.rustup #RUST
+
+	# development tools
+	pkgs.neovim 
 	pkgs.lazygit
 	pkgs.btop
-	pkgs.k9s
 	pkgs.docker
 	pkgs.fzf
+
+
+	# general tools
+        pkgs.tmux
+	pkgs.starship #multi-shell customizable prompt
+	pkgs.exa #a more modern 'ls'
+
+	#fun
+	pkgs.thefuck
 	pkgs.spotifyd
 	pkgs.spotify-tui
 	pkgs.gum
+	pkgs.glow
 	pkgs.skate
 	pkgs.stow
 	pkgs.soft-serve
+	pkgs.broot
+	pkgs.devspace
+	pkgs.doctl
+	pkgs.ripgrep
   ];
 
 
