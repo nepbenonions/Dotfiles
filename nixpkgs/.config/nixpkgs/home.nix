@@ -23,6 +23,7 @@
 	pkgs.lazygit # a nice git TUI
 	pkgs.docker
 	pkgs.doctl # digital ocean cli, useful for throwaway cloud vms or cheap serverless functions.
+	pkgs.gh #github cli
 
 	# charm.sh tools
         pkgs.gum
