@@ -18,4 +18,5 @@ alias kdd="kubectl describe deployment"
 # exa, a modern replacement for 'ls'
 alias ls="exa"
 
-
+# install/sync nix packages with home-manager
+alias hms="home-manager switch"
