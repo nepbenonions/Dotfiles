@@ -11,38 +11,39 @@
 	pkgs.k9s #a very good boy
   	pkgs.kubectl #kube cuddle
 	pkgs.krew #package manager for kubectl plugins
+	pkgs.devspace # REALLY useful for developing inside a live kube cluster without having to build and upload a container image first
 
 	#languages
-	
 	pkgs.go #GO!
 	pkgs.rustup #RUST
 
 	# development tools
-	pkgs.neovim 
-	pkgs.lazygit
-	pkgs.btop
+	pkgs.neovim # preffered cli editor
+	pkgs.helix # my favourite CLI editor, but no plugin system yet so I use neovim more often. 
+	pkgs.lazygit # a nice git TUI
 	pkgs.docker
-	pkgs.fzf
+	pkgs.doctl # digital ocean cli, useful for throwaway cloud vms or cheap serverless functions.
 
+	# charm.sh tools
+        pkgs.gum
+	pkgs.glow
+	pkgs.skate
+        pkgs.soft-serve
 
 	# general tools
         pkgs.tmux
 	pkgs.starship #multi-shell customizable prompt
-	pkgs.exa #a more modern 'ls'
+	pkgs.exa #more modern 'ls'
+	pkgs.ripgrep #more modern 'grep'
+	pkgs.fzf # nifty fuzzy finder
+	pkgs.btop #better than top, better than htop
+	pkgs.stow # dotfile manager
+	pkgs.broot # like 'tree' but better, respects .gitignore in output and allows for navigation around filesystem.
 
 	#fun
-	pkgs.thefuck
-	pkgs.spotifyd
-	pkgs.spotify-tui
-	pkgs.gum
-	pkgs.glow
-	pkgs.skate
-	pkgs.stow
-	pkgs.soft-serve
-	pkgs.broot
-	pkgs.devspace
-	pkgs.doctl
-	pkgs.ripgrep
+	pkgs.thefuck # type 'fuck' after making a typo on a shell command.
+	pkgs.spotifyd #spotify daemon, needed for spotify TUI
+	pkgs.spotify-tui #run spotify in the terminal, I only use this on Arch, not macOS
   ];
 
 
